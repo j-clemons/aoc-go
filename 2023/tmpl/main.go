@@ -17,7 +17,7 @@ func toInt(str string) int {
     return i
 }
 
-func promptFunc(input string) int64 {
+func promptFunc(input string) int {
     input_lines := strings.Split(input, "\n")
 
     return nil

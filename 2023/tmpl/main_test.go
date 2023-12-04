@@ -10,7 +10,7 @@ func TestPromptFunc(t *testing.T) {
 INPUT
 LINES`
 
-    var expected int64 = 0
+    var expected int = 0
 
     actual := promptFunc(i)
 
