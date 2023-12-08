@@ -41,5 +41,5 @@ func main() {
 
     res := promptFunc(string(file))
 
-    fmt.Print(res)
+    fmt.Println(res)
 }
