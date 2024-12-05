@@ -26,6 +26,16 @@ func toInt(str string) int {
     return i
 }
 
+func splitIntSlice(str string, delim string) []int {
+    strSlice := strings.Split(str, delim)
+
+    intSlice := []int{}
+    for _, v := range strSlice {
+        intSlice = append(intSlice, toInt(v))
+    }
+    return intSlice
+}
+
 func promptFunc(input string) int {
     defer duration(track("promptFunc"))
     input_lines := strings.Split(input, "\n")
